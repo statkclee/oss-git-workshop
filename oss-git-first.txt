@@ -1,0 +1,25 @@
+## feature 브랜치 생성
+git branch feature
+touch test.txt
+git add -A
+git commit -m"create branch and add test.txt"
+
+# 브랜치 생성
+git remote add upstream git@github.com:statkclee/oss-git-workshop.git
+
+# git 브랜치 푸쉬
+git push origin feature
+
+# 브랜치 병합
+git checkout master
+git merge origin/feature
+
+## 브랜치 
+git merge feature
+
+## 브랜치 삭제
+git branch -D feature
+
+## 삭제된 브랜치 GitHub 반영
+git push origin :feature
+history > oss-git-first.txt
